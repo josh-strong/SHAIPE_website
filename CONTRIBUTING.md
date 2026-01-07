@@ -1,6 +1,6 @@
-# Contributing to the OxCARES Website (no coding experience needed)
+# Contributing to the SHAIPE Website (no coding experience needed)
 
-This guide shows you how to update the site using an AI assistant ("vibe‑coding") with Cursor or GitHub Copilot. You’ll fork the repo, edit locally with AI help, preview, then open a Pull Request (PR) for review.
+This guide shows you how to update the site using an AI assistant ("vibe‑coding") with Cursor or GitHub Copilot. You'll fork the repo, edit locally with AI help, preview, then open a Pull Request (PR) for review.
 
 ## What you need
 - A GitHub account: https://github.com
@@ -13,7 +13,7 @@ This guide shows you how to update the site using an AI assistant ("vibe‑codin
 ---
 
 ## 1) Fork the repository (creates your copy)
-1. Visit: https://github.com/josh-strong/OxCARES_website
+1. Visit: https://github.com/josh-strong/SHAIPE_website
 2. Click "Fork" (top‑right) to create a fork under your account.
 
 ![GitHub fork button – screenshot placeholder](docs/images/01_fork.png)
@@ -27,10 +27,10 @@ Replace YOUR_USERNAME with your GitHub username.
 
 ```bash
 # In Terminal
-git clone https://github.com/YOUR_USERNAME/OxCARES_website.git
-cd OxCARES_website
+git clone https://github.com/YOUR_USERNAME/SHAIPE_website.git
+cd SHAIPE_website
 # Point back to the original repo so you can sync later
-git remote add upstream https://github.com/josh-strong/OxCARES_website.git
+git remote add upstream https://github.com/josh-strong/SHAIPE_website.git
 ```
 
 ---
@@ -43,7 +43,7 @@ git checkout -b feature/your-change
 ---
 
 ## 4) Open the project in Cursor or VS Code
-- Cursor: Open Cursor → File → Open Folder → select the `OxCARES_website` folder.
+- Cursor: Open Cursor → File → Open Folder → select the `SHAIPE_website` folder.
 - VS Code: Open folder, install GitHub Copilot (View → Extensions → search for "GitHub Copilot").
 
 Examples of what to ask the AI
@@ -82,7 +82,7 @@ git push -u origin feature/your-change
 
 ## 8) Open a Pull Request (PR)
 1. Go to your fork on GitHub. You should see a prompt to "Compare & pull request".
-2. Write a short description and submit the PR to `josh-strong/OxCARES_website`.
+2. Write a short description and submit the PR to `josh-strong/SHAIPE_website`.
 
 Reference: https://docs.github.com/pull-requests/collaborating-with-pull-requests
 
@@ -128,4 +128,4 @@ If unsure, ask the AI assistant to "implement the change accessibly and consiste
 
 ---
 
-If you get stuck at any step, open an issue on GitHub or ask in the team channel; we’re happy to help.
+If you get stuck at any step, open an issue on GitHub or ask in the team channel; we're happy to help.

@@ -1,4 +1,4 @@
-# OxCARES Logo Package
+# SHAIPE Logo Package
 
 For how to edit this website using Cursor or Copilot, see:
 - CONTRIBUTING: ./CONTRIBUTING.md
@@ -21,12 +21,12 @@ For how to edit this website using Cursor or Copilot, see:
 
 ## Usage Guidelines
 - Minimum size: 24 px for symbol, 120 px for lockup
-- Clearspace: maintain half the symbol’s width as padding around
+- Clearspace: maintain half the symbol's width as padding around
 - Works in 1-colour (black/white)
 - Ensure contrast meets WCAG AA
 
-## Do / Don’t
+## Do / Don't
 - Do use official colour palette
 - Do maintain aspect ratio
-- Don’t distort or rotate the logo
-- Don’t change colours outside palette
+- Don't distort or rotate the logo
+- Don't change colours outside palette

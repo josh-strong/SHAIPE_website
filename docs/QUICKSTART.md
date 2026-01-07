@@ -1,15 +1,15 @@
-# OxCARES Website – Quickstart for Editors
+# SHAIPE Website – Quickstart for Editors
 
 This is the fastest way to make a small change and open a Pull Request (PR).
 
 1) Fork the repo
-- Go to https://github.com/josh-strong/OxCARES_website → click Fork.
+- Go to https://github.com/josh-strong/SHAIPE_website → click Fork.
 ![Fork screenshot placeholder](images/01_fork.png)
 
 2) Clone your fork
 ```bash
-git clone https://github.com/YOUR_USERNAME/OxCARES_website.git
-cd OxCARES_website
+git clone https://github.com/YOUR_USERNAME/SHAIPE_website.git
+cd SHAIPE_website
 ```
 ![Clone screenshot placeholder](images/02_clone.png)
 
