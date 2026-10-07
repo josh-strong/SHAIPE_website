@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//SHAIPE//Workshops//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5th-human-ai-workshop-20261023@shaipe.co.uk
+DTSTAMP:20261007T120215Z
+DTSTART:20261023T080000Z
+DTEND:20261023T130000Z
+SUMMARY:5th Human-AI for Clinical Decision-Making Workshop
+LOCATION:IBME\, 1st Floor Seminar Room\, Old Road Campus Research Building\
+ , Headington\, Oxford OX3 7DQ
+DESCRIPTION:All times are UK local time. Registration: 09:00-09:30. Worksho
+ p begins promptly at 09:30\; expected finish 14:00. If you are no longer a
+ ble to attend\, please let the workshop organisers know as soon as possibl
+ e using the contact details in your invitation. Directions: https://ibme.o
+ x.ac.uk/contact/
+URL:https://shaipe.co.uk/events.html#workshop-5-2026
+END:VEVENT
+END:VCALENDAR

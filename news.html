@@ -4,11 +4,13 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>News | SHAIPE</title>
+    <meta name="description" content="The latest SHAIPE publications and news, including the 5th Human-AI for Clinical Decision-Making Workshop on 23 October 2026." />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
     <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/updates.css" />
     <link rel="icon" href="assets/img/logo.png" type="image/png" />
   </head>
-  <body>
+  <body class="updates-page">
     <a class="skip-link" href="#main">Skip to content</a>
     <header class="container site-header">
       <nav class="nav">
@@ -30,10 +32,34 @@
     </header>
     <main id="main" class="container">
       <h1>News</h1>
-      <article>
-        <h3>Welcome to SHAIPE</h3>
-        <small>Posted <span id="year"></span></small>
-        <p>We are launching a cross-disciplinary effort to improve safety in clinical AI. Watch this space for updates.</p>
+      <p class="updates-intro">Research, publications and events from our collaboration across engineering, psychology and clinical practice.</p>
+      <article aria-labelledby="workshop-news-title">
+        <p class="news-meta">Workshop announcement · Posted <time datetime="2026-10-07">7 October 2026</time></p>
+        <h2 id="workshop-news-title"><a href="events.html#workshop-5-2026">5th Human-AI for Clinical Decision-Making Workshop</a></h2>
+        <p>We look forward to welcoming you on <strong><time datetime="2026-10-23">Friday 23 October 2026</time></strong> at <strong>IBME, 1st Floor Seminar Room</strong>.</p>
+        <p>Registration runs from 09:00 to 09:30. The workshop begins promptly at 09:30 and is expected to finish at 14:00. All times are UK local time.</p>
+        <p><a href="events.html#workshop-5-2026">View workshop details, directions and the calendar download →</a></p>
+      </article>
+      <article aria-labelledby="raven-news-title">
+        <p class="news-meta">Publication · Posted <time datetime="2026-10-07">7 October 2026</time></p>
+        <h2 id="raven-news-title"><a href="publication-raven-vr-osces.html">An examiner-conditioned AI second marker for VR OSCEs</a></h2>
+        <p>Our new paper in <cite>npj Digital Medicine</cite> introduces RAVEN, an AI second marker that combines VR video, action logs and examiner assessments to support review of clinical exam marking.</p>
+        <p>In a retrospective evaluation involving 120 students and 442 ratings, a confidence-gated combination improved agreement with an examiner panel, with the largest gain in borderline-fail cases. The system is intended to support human review of assessment decisions.</p>
+        <p class="news-meta">Published <time datetime="2026-10-07">7 October 2026</time> · Open access</p>
+        <p><a href="publication-raven-vr-osces.html">Explore the study and its findings →</a></p>
+      </article>
+      <article aria-labelledby="review-news-title">
+        <p class="news-meta">Publication · Posted <time datetime="2026-10-07">7 October 2026</time></p>
+        <h2 id="review-news-title"><a href="publication-haic-review.html">Human-AI Collaboration in Healthcare: A Scoping Review</a></h2>
+        <p>What helps people and AI work well together in healthcare? Our review in <cite>npj Digital Medicine</cite> brings together 140 studies to map how collaboration is evaluated and what shapes its success.</p>
+        <p>The review highlights task fit, workflow integration, training and trust, alongside gaps in evaluating patient outcomes, accountability and safety. Our new explainer walks through the evidence and its implications.</p>
+        <p class="news-meta">Published <time datetime="2026-06-20">20 June 2026</time> · Open access</p>
+        <p><a href="publication-haic-review.html">Explore the review and the evidence →</a></p>
+      </article>
+      <article aria-labelledby="welcome-news-title">
+        <h2 id="welcome-news-title">Welcome to SHAIPE</h2>
+        <p>We are a cross-disciplinary effort to improve safety in clinical AI.</p>
+        <p><a href="about.html">Learn about the collaboration →</a></p>
       </article>
     </main>
     <footer class="container site-footer">
@@ -49,5 +75,4 @@
     <script src="assets/js/main.js"></script>
   </body>
   </html>
-
 

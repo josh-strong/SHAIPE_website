@@ -1,0 +1,2 @@
+# Calendar downloads require CRLF line endings; preserve them in the repository.
+*.ics -text whitespace=cr-at-eol
