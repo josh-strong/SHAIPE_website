@@ -147,8 +147,6 @@
 .paper-related { padding-top: 1rem; border-top: 1px solid var(--paper-border); }
 .paper-related a { font-weight: 600; }
 .publications-page a:focus-visible, .publications-page button:focus-visible, .publications-page summary:focus-visible { outline: 3px solid var(--paper-accent); outline-offset: 4px; }
-.publications-page .social-links { justify-content: flex-start; }
-.publications-page .social-links a { margin: 0; }
 
 @media (max-width: 960px) {
   .paper-layout { grid-template-columns: minmax(0, 1fr); gap: 1rem; }
