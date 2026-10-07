@@ -1,0 +1,7 @@
+.contact-supervisors { margin-top: 2rem; }
+.contact-card { min-width: 0; border: 1px solid #d8e3ef; border-radius: 0.8rem; }
+.contact-card h2 { margin-top: 0; font-size: 1.4rem; color: var(--brand); }
+.contact-card p { font-size: 0.9rem; }
+.contact-email { overflow-wrap: anywhere; }
+.contact-email button { padding: 0.55rem 0.8rem; font-size: 0.85rem; }
+.contact-card p:last-child { margin-bottom: 0; }
