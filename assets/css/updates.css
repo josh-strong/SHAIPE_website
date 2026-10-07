@@ -7,14 +7,28 @@
 .updates-page .news-meta { color: #4c5e72; font-size: 0.8rem; }
 .updates-page main > section { margin-bottom: 2rem; }
 .updates-page #workshop-5-2026 { scroll-margin-top: 1.5rem; }
+.updates-page .workshop-date { color: var(--brand); font-size: 0.9rem; font-weight: 600; }
+.updates-page #workshop-title { margin-top: 0; }
+.workshop-layout { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2rem; margin: 1.5rem 0; }
 .workshop-key-details { display: grid; grid-template-columns: 5rem minmax(0, 1fr); gap: 0.75rem 1rem; margin: 1.5rem 0; }
+.workshop-layout .workshop-key-details { margin: 0; align-content: start; }
 .workshop-key-details dt { font-weight: 600; }
 .workshop-key-details dd { margin: 0; }
 .workshop-schedule caption { text-align: left; color: var(--brand); font-weight: 600; margin-bottom: 0.5rem; }
+.workshop-schedule { margin: 0; }
 .workshop-schedule tbody th { white-space: nowrap; }
 .calendar-link { display: inline-block; padding: 0.55rem 0.85rem; border: 1px solid var(--brand); border-radius: 0.4rem; background: #edf4fb; font-size: 0.85rem; font-weight: 600; }
+.event-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem 1.25rem; margin: 1.5rem 0; }
+.event-actions > a { font-size: 0.85rem; }
+.event-attendance-note { margin-bottom: 0; font-size: 0.85rem; }
+.event-list { gap: 1.25rem; }
+.event-list article h3 { margin-top: 0; }
+.event-list article p:last-child { margin-bottom: 0; }
 .updates-page .social-links { justify-content: flex-start; }
 .updates-page .social-links a { margin: 0; }
+@media (max-width: 960px) {
+  .workshop-layout { grid-template-columns: minmax(0, 1fr); gap: 1.25rem; }
+}
 @media (max-width: 600px) {
   .workshop-key-details { grid-template-columns: minmax(0, 1fr); gap: 0.2rem; }
   .workshop-key-details dd { margin-bottom: 0.75rem; }
