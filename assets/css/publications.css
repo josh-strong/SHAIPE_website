@@ -90,6 +90,7 @@
 .paper-actions a[role="button"] { padding: 0.6rem 1rem; font-size: 0.85rem; }
 .paper-flagship { padding: 1.25rem; margin: 1rem 0 2rem; background: #fff; border: 1px solid var(--paper-border); border-radius: 0.8rem; scroll-margin-top: 1.5rem; }
 .paper-flagship-image { display: block; max-width: 48rem; margin: 0 auto; }
+.paper-flagship-wide .paper-flagship-image { max-width: 64rem; }
 .paper-flagship img { display: block; width: 100%; height: auto; }
 .paper-flagship figcaption { padding: 0; margin-top: 1rem; font-size: 0.85rem; }
 .paper-flagship figcaption p:last-child { margin-bottom: 0; }
