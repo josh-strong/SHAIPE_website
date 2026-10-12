@@ -41,6 +41,7 @@ IMAGES = [
     ("headshot_Anna Todsen.jpg", "anna-todsen", (320, 640), False),
     ("pramit_pic.jpg", "pramit-saha", (320, 640), False),
     ("alexander-capstick.jpg", "alexander-capstick", (320, 640), False),
+    ("w1140.jpg", "paul-greig", (320, 640), False),
     ("Bio pic_Rosemary Warren.jpg", "rosie-warren", (320, 640), False),
 ]
 
