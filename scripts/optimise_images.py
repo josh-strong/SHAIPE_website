@@ -43,25 +43,28 @@ IMAGES = [
     ("alexander-capstick.jpg", "alexander-capstick", (320, 640), False),
     ("w1140.jpg", "paul-greig", (320, 640), False),
     ("Bio pic_Rosemary Warren.jpg", "rosie-warren", (320, 640), False),
+    ("v2027.JPG", "zhiyuan-liu", (320, 640), False),
+    ("SHAIPE Oct 26 2 Copy.jpg", "workshop-oct-2026", (720, 1440), False),
 ]
 
 
 def generate():
     OUTPUT.mkdir(parents=True, exist_ok=True)
+    lanczos = getattr(Image, "Resampling", Image).LANCZOS
     for source, stem, widths, lossless in IMAGES:
         with Image.open(SOURCE / source) as original:
             image = ImageOps.exif_transpose(original)
             image = image.convert("RGBA" if "A" in image.getbands() else "RGB")
             for width in sorted({min(width, image.width) for width in widths}):
                 height = round(image.height * width / image.width)
-                display = image.resize((width, height), Image.Resampling.LANCZOS)
+                display = image.resize((width, height), lanczos)
                 target = OUTPUT / f"{stem}-{width}.webp"
                 display.save(target, "WEBP", lossless=lossless, quality=85, method=6)
                 print(f"{target.relative_to(ROOT)}: {width} × {height}, {target.stat().st_size:,} bytes")
 
     with Image.open(SOURCE / "logo.png") as logo:
         favicon = Image.new("RGBA", (32, 32))
-        logo.thumbnail((32, 32), Image.Resampling.LANCZOS)
+        logo.thumbnail((32, 32), lanczos)
         favicon.alpha_composite(logo, ((32 - logo.width) // 2, (32 - logo.height) // 2))
         favicon.save(OUTPUT / "favicon-32.png", optimize=True)
 

@@ -6,17 +6,23 @@
 .updates-page article h2 a:hover { text-decoration: underline; }
 .updates-page .news-meta { color: #4c5e72; font-size: 0.8rem; }
 .updates-page main > section { margin-bottom: 2rem; }
-.updates-page #workshop-5-2026 { scroll-margin-top: 1.5rem; }
+.updates-page #workshop-5-2026, .updates-page #workshop-6-2026 { scroll-margin-top: 1.5rem; }
 .updates-page .workshop-date { color: var(--brand); font-size: 0.9rem; font-weight: 600; }
 .updates-page #workshop-title { margin-top: 0; }
-.workshop-layout { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2rem; margin: 1.5rem 0; }
-.workshop-key-details { display: grid; grid-template-columns: 5rem minmax(0, 1fr); gap: 0.75rem 1rem; margin: 1.5rem 0; }
+.workshop-photo { margin: 1.25rem 0; }
+.workshop-photo img { width: 100%; height: auto; display: block; border-radius: 0.5rem; }
+.workshop-photo figcaption { margin-top: 0.5rem; color: #4c5e72; font-size: 0.85rem; }
+.workshop-layout { display: grid; grid-template-columns: 15rem minmax(0, 1fr); gap: 2rem; margin: 1.5rem 0; }
+.workshop-key-details { display: grid; grid-template-columns: 4.5rem minmax(0, 1fr); gap: 0.75rem 1rem; margin: 1.5rem 0; }
 .workshop-layout .workshop-key-details { margin: 0; align-content: start; }
 .workshop-key-details dt { font-weight: 600; }
 .workshop-key-details dd { margin: 0; }
 .workshop-schedule caption { text-align: left; color: var(--brand); font-weight: 600; margin-bottom: 0.5rem; }
 .workshop-schedule { margin: 0; }
-.workshop-schedule tbody th { white-space: nowrap; }
+.workshop-schedule tbody th { white-space: nowrap; vertical-align: top; }
+.workshop-schedule tbody td { vertical-align: top; }
+.workshop-schedule ul { margin: 0.35rem 0 0 0; padding-left: 1.2rem; }
+.workshop-schedule li { margin-bottom: 0.15rem; }
 .calendar-link { display: inline-block; padding: 0.55rem 0.85rem; border: 1px solid var(--brand); border-radius: 0.4rem; background: #edf4fb; font-size: 0.85rem; font-weight: 600; }
 .event-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem 1.25rem; margin: 1.5rem 0; }
 .event-actions > a { font-size: 0.85rem; }
