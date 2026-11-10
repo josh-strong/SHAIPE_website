@@ -1,0 +1,41 @@
+{
+  "updated_at": "2026-11-10",
+  "totals": {
+    "publications": 2,
+    "citations": 19,
+    "open_access": 2
+  },
+  "publications": [
+    {
+      "id": "raven-vr-osces-2026",
+      "doi": "10.1038/s41746-026-03336-4",
+      "related_dois": [
+        "10.48550/arxiv.2607.19063"
+      ],
+      "openalex_ids": [
+        "W7220851774",
+        "W7170031114"
+      ],
+      "title": "An examiner-conditioned AI second marker for VR OSCEs",
+      "year": 2026,
+      "open_access": true,
+      "citations": 0,
+      "source": "openalex"
+    },
+    {
+      "id": "haic-scoping-review-2026",
+      "doi": "10.1038/s41746-026-02918-6",
+      "openalex_ids": [
+        "W7165369257",
+        "W7113748998"
+      ],
+      "scholar_author_id": "vFoP8mIAAAAJ",
+      "title": "Human-AI Collaboration in Healthcare: A Scoping Review",
+      "year": 2026,
+      "open_access": true,
+      "min_citations": 19,
+      "citations": 19,
+      "source": "google_scholar"
+    }
+  ]
+}
