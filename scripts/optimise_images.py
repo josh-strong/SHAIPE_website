@@ -46,7 +46,7 @@ IMAGES = [
     ("IMG_1793.jpg", "angela-wang", (320, 640), False),
     ("Yegazarian_Photo.jpg", "alek-yegazarian", (320, 640), False),
     ("fig.jpg", "can-peng", (320, 640), False),
-    ("SHAIPE Oct 26 2 Copy.jpg", "workshop-oct-2026", (720, 1440), False),
+    ("SHAIPE Oct 26 2 Copy.jpg", "workshop-oct-2026", (720, 960, 1440), False),
 ]
 
 

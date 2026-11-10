@@ -117,8 +117,9 @@ document.addEventListener("DOMContentLoaded", () => {
         }, 0);
       });
 
-      // Click/touch toggle for mobile
+      // Click/touch toggle for mobile (ignore clicks on links inside details)
       card.addEventListener('click', (e) => {
+        if (e.target instanceof Element && e.target.closest('a')) return;
         const isExpanded = card.classList.contains('expanded');
         if (isExpanded) {
           collapse(card);
@@ -138,6 +139,29 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   }
+
+  // Prefetch internal HTML pages on hover/touchstart for near-instant navigation
+  const prefetched = new Set();
+  function prefetchPage(href) {
+    if (!href || href.startsWith("#") || href.startsWith("mailto:") || href.includes("://")) return;
+    const page = href.split("#")[0];
+    if (!page.endsWith(".html") || prefetched.has(page)) return;
+    prefetched.add(page);
+    const link = document.createElement("link");
+    link.rel = "prefetch";
+    link.href = page;
+    document.head.appendChild(link);
+  }
+
+  document.addEventListener("mouseover", (e) => {
+    const a = e.target instanceof Element ? e.target.closest("a[href]") : null;
+    if (a) prefetchPage(a.getAttribute("href"));
+  }, { passive: true });
+
+  document.addEventListener("touchstart", (e) => {
+    const a = e.target instanceof Element ? e.target.closest("a[href]") : null;
+    if (a) prefetchPage(a.getAttribute("href"));
+  }, { passive: true });
 });
 
 

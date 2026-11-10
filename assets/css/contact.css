@@ -1,7 +1,36 @@
-.contact-supervisors { margin-top: 2rem; }
-.contact-card { min-width: 0; border: 1px solid #d8e3ef; border-radius: 0.8rem; }
-.contact-card h2 { margin-top: 0; font-size: 1.4rem; color: var(--brand); }
-.contact-card p { font-size: 0.9rem; }
+.contact-supervisors {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0;
+  padding: 2.25rem 0 1rem;
+  border-top: 1px solid rgba(0, 33, 71, 0.14);
+  margin-top: 1.75rem;
+}
+.contact-card {
+  min-width: 0;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 0 1.75rem 0 0;
+  margin: 0;
+}
+.contact-card + .contact-card {
+  padding-left: 1.75rem;
+  border-left: 1px solid rgba(0, 33, 71, 0.14);
+}
+.contact-card:last-child {
+  padding-right: 0;
+}
+.contact-card h2 { margin-top: 0; font-size: 1.35rem; color: var(--brand); margin-bottom: 0.4rem; }
+.contact-card p { font-size: 0.94rem; color: #1f2e3d; }
 .contact-email { overflow-wrap: anywhere; }
-.contact-email button { padding: 0.55rem 0.8rem; font-size: 0.85rem; }
-.contact-card p:last-child { margin-bottom: 0; }
+.contact-email button { padding: 0.5rem 0.85rem; font-size: 0.85rem; }
+.contact-card p:last-child { margin-bottom: 0; font-weight: 600; }
+.contact-card p:last-child a { text-decoration: none; }
+.contact-card p:last-child a:hover { text-decoration: underline; }
+@media (max-width: 860px) {
+  .contact-supervisors { grid-template-columns: minmax(0, 1fr); gap: 1.75rem; }
+  .contact-card, .contact-card + .contact-card { padding: 0; border-left: none; }
+  .contact-card + .contact-card { padding-top: 1.75rem; border-top: 1px solid rgba(0, 33, 71, 0.12); }
+}

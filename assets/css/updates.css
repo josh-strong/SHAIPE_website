@@ -1,25 +1,53 @@
-/* News and event details, using the shared Oxford Blue palette. */
-.updates-page .updates-intro { max-width: 44rem; font-size: 1.1rem; margin-bottom: 2rem; }
-.updates-page article { border: 1px solid #d8e3ef; border-radius: 0.8rem; }
-.updates-page article h2, .updates-page article h3 { color: var(--brand); font-size: 1.4rem; line-height: 1.3; }
+/* News and event details, using the shared borderless editorial style. */
+.updates-page main > h1 { margin-top: 2rem; margin-bottom: 0.5rem; }
+.updates-page .updates-intro { max-width: 48rem; font-size: 1.1rem; color: #1f2e3d; padding-bottom: 1.75rem; margin-bottom: 0; border-bottom: 1px solid rgba(0, 33, 71, 0.14); }
+.updates-page article {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(0, 33, 71, 0.14);
+  border-radius: 0;
+  box-shadow: none;
+  padding: 2.25rem 0;
+  margin: 0;
+}
+.updates-page main > article:last-of-type { border-bottom: none; }
+.updates-page article h2, .updates-page article h3 { color: var(--brand); font-size: 1.45rem; line-height: 1.3; margin-bottom: 0.65rem; }
 .updates-page article h2 a { text-decoration: none; }
 .updates-page article h2 a:hover { text-decoration: underline; }
-.updates-page .news-meta { color: #4c5e72; font-size: 0.8rem; }
-.updates-page main > section { margin-bottom: 2rem; }
+.updates-page .news-meta {
+  color: var(--brand-accent);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 0.4rem;
+}
+.updates-page main > section { margin-bottom: 0; padding: 2.25rem 0; border-bottom: 1px solid rgba(0, 33, 71, 0.14); }
+.updates-page main > section:last-of-type { border-bottom: none; }
+.updates-page main > section > h2 {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--brand-accent);
+  margin-bottom: 1.25rem;
+}
+.updates-page main > section > article { padding: 0; border-bottom: none; }
 .updates-page #workshop-5-2026, .updates-page #workshop-6-2026 { scroll-margin-top: 1.5rem; }
-.updates-page .workshop-date { color: var(--brand); font-size: 0.9rem; font-weight: 600; }
+.updates-page .workshop-date { color: var(--brand-accent); }
 .updates-page #workshop-title { margin-top: 0; }
 .workshop-photo { margin: 1.25rem 0; }
-.workshop-photo img { width: 100%; height: auto; display: block; border-radius: 0.5rem; }
+.workshop-photo img { width: 100%; height: auto; display: block; border-radius: 0.5rem; border: 1px solid rgba(0, 33, 71, 0.12); }
 .workshop-photo figcaption { margin-top: 0.5rem; color: #4c5e72; font-size: 0.85rem; }
-.workshop-layout { display: grid; grid-template-columns: 15rem minmax(0, 1fr); gap: 2rem; margin: 1.5rem 0; }
+.workshop-layout { display: grid; grid-template-columns: 15rem minmax(0, 1fr); gap: 2.25rem; margin: 1.75rem 0 0; padding-top: 1.75rem; border-top: 1px solid rgba(0, 33, 71, 0.12); }
 .workshop-key-details { display: grid; grid-template-columns: 4.5rem minmax(0, 1fr); gap: 0.75rem 1rem; margin: 1.5rem 0; }
-.workshop-layout .workshop-key-details { margin: 0; align-content: start; }
-.workshop-key-details dt { font-weight: 600; }
+.workshop-layout .workshop-key-details { margin: 0; align-content: start; padding-right: 1.5rem; border-right: 1px solid rgba(0, 33, 71, 0.12); }
+.workshop-key-details dt { font-weight: 600; color: var(--brand); }
 .workshop-key-details dd { margin: 0; }
-.workshop-schedule caption { text-align: left; color: var(--brand); font-weight: 600; margin-bottom: 0.5rem; }
-.workshop-schedule { margin: 0; }
-.workshop-schedule tbody th { white-space: nowrap; vertical-align: top; }
+.workshop-schedule caption { text-align: left; color: var(--brand-accent); font-size: 0.75rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 0.5rem; }
+.workshop-schedule { margin: 0; background: transparent; }
+.workshop-schedule th, .workshop-schedule td { background: transparent; border-color: rgba(0, 33, 71, 0.12); }
+.workshop-schedule tbody th { white-space: nowrap; vertical-align: top; color: var(--brand); }
 .workshop-schedule tbody td { vertical-align: top; }
 .workshop-schedule ul { margin: 0.35rem 0 0 0; padding-left: 1.2rem; }
 .workshop-schedule li { margin-bottom: 0.15rem; }
@@ -27,13 +55,21 @@
 .event-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem 1.25rem; margin: 1.5rem 0; }
 .event-actions > a { font-size: 0.85rem; }
 .event-attendance-note { margin-bottom: 0; font-size: 0.85rem; }
-.event-list { gap: 1.25rem; }
-.event-list article h3 { margin-top: 0; }
+.event-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0; }
+.event-list article { padding: 0 2rem 0 0; border-bottom: none; }
+.event-list article + article { padding-left: 2rem; padding-right: 0; border-left: 1px solid rgba(0, 33, 71, 0.14); }
+.event-list article h3 { margin-top: 0; font-size: 1.25rem; }
 .event-list article p:last-child { margin-bottom: 0; }
 .updates-page .social-links { justify-content: flex-start; }
 .updates-page .social-links a { margin: 0; }
 @media (max-width: 960px) {
-  .workshop-layout { grid-template-columns: minmax(0, 1fr); gap: 1.25rem; }
+  .workshop-layout { grid-template-columns: minmax(0, 1fr); gap: 1.5rem; }
+  .workshop-layout .workshop-key-details { padding-right: 0; border-right: none; padding-bottom: 1.25rem; border-bottom: 1px solid rgba(0, 33, 71, 0.12); }
+}
+@media (max-width: 768px) {
+  .event-list { grid-template-columns: minmax(0, 1fr); gap: 1.5rem; }
+  .event-list article, .event-list article + article { padding: 0; border-left: none; }
+  .event-list article + article { padding-top: 1.5rem; border-top: 1px solid rgba(0, 33, 71, 0.12); }
 }
 @media (max-width: 600px) {
   .workshop-key-details { grid-template-columns: minmax(0, 1fr); gap: 0.2rem; }
